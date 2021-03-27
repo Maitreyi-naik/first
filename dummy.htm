@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title> Maitreyi </title>
+		<style>
+		body {background-color: white;}
+		h1   {color: black; font-family: verdana; font-size: 300%;}
+		h2   {color: gold; font-family: verdana; font-size: 200%;}
+		h3   {color: brown; font-family: verdana; font-size: 200%;}
+		p    {color: blue; font-family: courier;  font-size: 160%;}
+		</style>
+	</head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<body>
+		<center><h1>Tadaaaaa</h1></center>
+		<h2> Survey </h2>
+		<p style="color:brown;">After the image, please answer the questions that follow</p>
+		<img src="IMG_1115.jpg" style="max-width:75%;height:auto;">
+	<h3> Please enter your full name</h3>
+	<form>
+  		<p style="color:brown;">First name:<br>
+  		<input type="text" name="firstname">
+  		<br>
+  		Last name:<br>
+  		<input type="text" name="lastname"> </p>
+	</form>	
+	<h3>Radio Buttons</h3>
+
+	<form>
+  		<input type="radio" name="gender" value="male"> Male<br>
+  		<input type="radio" name="gender" value="female"> Female<br>
+  		<input type="radio" name="gender" value="text"> Other                                                                                                                                                                                                                                                               
+	</form> 
+	<h3>My First Google Map</h3>
+
+<div id="map" style="width:100%;height:400px;"></div>
+
+<script>
+function myMap() {
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {
+    center: new google.maps.LatLng(51.5, -0.2), zoom: 10
+  };
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+}
+</script>
+
+ <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5c80NiU-SdzkASE8HiUdwvD6mPOTPHvQ&callback=myMap">
+  </script>
+	
+	</body>
+</html>     
